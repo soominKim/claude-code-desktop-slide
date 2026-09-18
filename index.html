@@ -517,6 +517,108 @@ h2.big em{font-style:normal;color:var(--ink)}
 .split .sp.ai li{color:rgba(255,255,255,.92)}
 .split .sp.you li{color:var(--ink)}
 
+
+/* 학습목표 */
+.goals{display:flex;flex-direction:column;gap:14px;margin-top:34px}
+.goals .pitem{padding:22px 32px}
+.goals .pitem .pk{width:320px}
+.mats{display:flex;gap:22px;margin-top:30px}
+.mats .mt{flex:1;display:flex;align-items:center;gap:18px;background:#fff;border:3px solid var(--line);border-radius:18px;padding:18px 26px;font-size:23px;line-height:1.4}
+.mats .mt .emoji{font-size:34px;flex:none}
+.mats .mt b{color:var(--brand)}
+.mats .mt small{display:block;font-family:var(--mono);font-size:17px;color:var(--dim);margin-top:4px}
+
+/* 프런트 · 백엔드 2열 설명 */
+.fb{display:flex;gap:0;margin-top:40px;align-items:stretch}
+.fb .fbc{flex:1;border-radius:24px;padding:38px 44px 34px;display:flex;flex-direction:column;gap:18px}
+.fb .fbc.fe{background:var(--soft)}
+.fb .fbc.be{background:var(--ink);color:#fff}
+.fb .fbc .tag{align-self:flex-start;font-family:var(--mono);font-size:18px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:999px;background:#fff;color:var(--brand)}
+.fb .fbc.be .tag{background:rgba(255,255,255,.12);color:var(--brand-glow)}
+.fb .fbc h3{font-size:46px;font-weight:800;letter-spacing:-.025em;line-height:1.15}
+.fb .fbc h3 small{font-size:26px;font-weight:600;color:var(--dim);margin-left:12px;letter-spacing:-.01em}
+.fb .fbc.be h3 small{color:rgba(255,255,255,.6)}
+.fb .fbc p{font-size:27px;line-height:1.55}
+.fb .fbc p b{color:var(--brand)}
+.fb .fbc.be p b{color:var(--brand-glow)}
+.fb .fbc ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.fb .fbc li{font-size:24px;line-height:1.5;color:var(--dim);padding-left:28px;position:relative}
+.fb .fbc li::before{content:'';position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--brand)}
+.fb .fbc.be li{color:rgba(255,255,255,.8)}
+.fb .fbc.be li::before{background:var(--brand-glow)}
+.fb .fbc li b{color:var(--ink)}
+.fb .fbc.be li b{color:#fff}
+.fb .fbmid{width:86px;flex:none;display:flex;align-items:center;justify-content:center}
+.fb .fbmid span{font-size:44px;font-weight:700;color:#cfc5d8}
+
+/* 로그인 흐름 도식 */
+.lgflow{display:flex;align-items:stretch;margin-top:40px;gap:0}
+.lgflow .node{border-radius:24px;padding:26px 28px;display:flex;flex-direction:column;gap:14px}
+.lgflow .node .nt{font-family:var(--mono);font-size:18px;font-weight:700;letter-spacing:.08em}
+.lgflow .node h3{font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.lgflow .node p{font-size:21px;line-height:1.5}
+.lgflow .node.fe{width:470px;flex:none;background:var(--soft);border:3px solid var(--line)}
+.lgflow .node.fe .nt{color:var(--brand)}
+.lgflow .node.fe p{color:var(--dim)}
+.lgflow .node.be{flex:1;background:var(--brand);color:#fff}
+.lgflow .node.be .nt{color:var(--brand-glow)}
+.lgflow .node.be p{color:rgba(255,255,255,.88)}
+.lgflow .node.db{width:300px;flex:none;background:var(--ink);color:#fff}
+.lgflow .node.db .nt{color:var(--brand-glow)}
+.lgflow .node.db p{color:rgba(255,255,255,.75)}
+/* 로그인 화면 목업 */
+.mock{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;box-shadow:0 12px 34px rgba(80,37,121,.10)}
+.mock .mh{font-size:22px;font-weight:800;text-align:center;margin-bottom:4px}
+.mock .in{border:2px solid var(--line);border-radius:10px;padding:10px 14px;font-size:19px;color:#a79cb3}
+.mock .bt{background:var(--brand);color:#fff;border-radius:10px;padding:11px;font-size:20px;font-weight:700;text-align:center}
+.mock .res{display:flex;gap:8px;margin-top:4px}
+.mock .res span{flex:1;font-size:16px;font-weight:700;text-align:center;padding:7px 6px;border-radius:8px;line-height:1.3}
+.mock .res .ok{background:#E7F7EE;color:#1F7A4A}
+.mock .res .no{background:#FDECEC;color:#B3261E}
+.dbrows{display:flex;flex-direction:column;gap:6px;margin-top:4px;font-family:var(--mono);font-size:16px}
+.dbrows div{background:rgba(255,255,255,.1);border-radius:8px;padding:7px 10px;color:rgba(255,255,255,.85)}
+.dbrows div.hit{background:var(--brand-glow);color:var(--ink);font-weight:700}
+/* 화살표 레인 */
+.lane{width:250px;flex:none;display:flex;flex-direction:column;justify-content:center;gap:48px;padding:0 14px}
+.lane.sm{width:170px}
+.arw{display:flex;flex-direction:column;gap:8px}
+.arw .lb{font-size:18px;line-height:1.35;color:var(--ink);font-weight:700;text-align:center}
+.arw .lb small{display:block;font-weight:400;color:var(--dim);font-size:16px;margin-top:2px}
+.arw .ln{position:relative;height:4px;background:var(--brand);border-radius:2px;margin:0 6px}
+.arw .ln::after{content:'';position:absolute;top:50%;right:-6px;transform:translateY(-50%);border-left:16px solid var(--brand);border-top:10px solid transparent;border-bottom:10px solid transparent}
+.arw.back .ln{background:var(--ink)}
+.arw.back .ln::after{right:auto;left:-6px;border-left:0;border-right:16px solid var(--ink)}
+.arw.both .ln::before{content:'';position:absolute;top:50%;left:-6px;transform:translateY(-50%);border-right:16px solid var(--brand);border-top:10px solid transparent;border-bottom:10px solid transparent}
+.arw .no{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-family:var(--mono);font-size:16px;font-weight:700;margin-right:6px;vertical-align:middle}
+.arw.back .no{background:var(--ink)}
+.lgcap{margin-top:30px;display:flex;gap:16px}
+.lgcap div{flex:1;background:var(--soft);border-radius:14px;padding:14px 20px;font-size:20px;line-height:1.45;color:var(--dim)}
+.lgcap div b{color:var(--ink)}
+.lgcap .n{font-family:var(--mono);font-weight:700;color:var(--brand);margin-right:6px}
+
+/* Git · GitHub */
+.vc{display:flex;gap:50px;margin-top:36px;align-items:stretch}
+.vc .vt{flex:1.1;min-width:0}
+.vc .vd{flex:1;min-width:0;display:flex;flex-direction:column;align-items:stretch}
+.vbox{display:flex;align-items:center;gap:22px;border-radius:22px;padding:24px 30px}
+.vbox .ltile{width:76px;height:76px;border-radius:18px;background:#fff}
+.vbox h3{font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.vbox h3 small{display:block;font-family:var(--mono);font-size:17px;font-weight:400;letter-spacing:.08em;margin-bottom:6px;color:var(--brand)}
+.vbox p{font-size:21px;line-height:1.45;color:var(--dim);margin-top:6px}
+.vbox.local{background:var(--soft);border:3px solid var(--line)}
+.vbox.remote{background:var(--brand);color:#fff}
+.vbox.remote h3 small{color:var(--brand-glow)}
+.vbox.remote p{color:rgba(255,255,255,.85)}
+.vmid{display:flex;justify-content:center;gap:90px;padding:20px 0}
+.varrow{display:flex;align-items:center;gap:16px}
+.varrow .shaft{position:relative;width:4px;height:96px;background:var(--brand);border-radius:2px}
+.varrow .shaft::after{content:'';position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);border-top:16px solid var(--brand);border-left:10px solid transparent;border-right:10px solid transparent}
+.varrow.up .shaft{background:var(--ink)}
+.varrow.up .shaft::after{bottom:auto;top:-6px;border-top:0;border-bottom:16px solid var(--ink)}
+.varrow .vl{font-size:24px;font-weight:800;line-height:1.25}
+.varrow .vl small{display:block;font-size:18px;font-weight:400;color:var(--dim);margin-top:4px}
+.vnote{margin-top:22px;display:flex;align-items:center;gap:16px;background:#fff;border:3px solid var(--line);border-radius:16px;padding:16px 24px;font-size:22px;line-height:1.45}
+.vnote b{color:var(--brand)}
 </style>
 </head>
 <body>
@@ -531,6 +633,22 @@ h2.big em{font-style:normal;color:var(--ink)}
     <div class="kicker reveal">BUILD &amp; DEPLOY</div>
     <h1 class="reveal">코딩 없이,<br><em>오늘 내 서비스를<br>인터넷에 올립니다</em></h1>
     <div class="sub reveal">PRD 한 장에서 시작해 실제 주소(https://….vercel.app)까지. 오늘 배우는 것은 문법이 아니라 <b>전체 흐름</b>입니다.</div>
+  </div></section>
+<section class="slide "><div class="toc reveal">학습목표</div>
+  <div class="content">
+    <h2 class="big reveal">오늘의 <em>학습목표</em></h2>
+    <div class="lede reveal">오늘이 끝나면 PRD 한 장에서 시작해 <b>실제 인터넷 주소에서 동작하는 내 서비스</b>를 갖게 됩니다.</div>
+    <div class="plist goals reveal">
+      <div class="pitem"><div class="pn">01</div><div class="pk">서비스의 구조</div><div class="pv">프런트엔드 · 백엔드 · 데이터베이스가 무엇이고, <b>어떻게 주고받는지</b> 설명할 수 있다.</div></div>
+      <div class="pitem"><div class="pn">02</div><div class="pk">도구의 자리</div><div class="pv">Claude Code · Node.js · GitHub · Supabase · Vercel이 <b>각각 맡는 역할</b>을 구분할 수 있다.</div></div>
+      <div class="pitem"><div class="pn">03</div><div class="pk">만들고 연결하기</div><div class="pv">PRD로 Claude Code에게 웹앱을 만들게 하고, <b>외부 API와 Supabase</b>를 연결할 수 있다.</div></div>
+      <div class="pitem"><div class="pn">04</div><div class="pk">코드 관리하기</div><div class="pv">Git으로 변경을 기록하고 <b>GitHub에 push</b>해 코드를 보관할 수 있다.</div></div>
+      <div class="pitem hot"><div class="pn">05</div><div class="pk">세상에 공개하기</div><div class="pv">Vercel로 배포해 <b>실제 주소에서 내 서비스</b>를 확인하고, 수정 → 재배포 루프를 돌릴 수 있다.</div></div>
+    </div>
+    <div class="mats reveal">
+      <div class="mt"><span class="emoji">🖥️</span><span><b>이 슬라이드</b> : 각 단계가 왜 있는지, 전체 흐름을 이해합니다<small>L07_ClaudeCode_실습_슬라이드.html</small></span></div>
+      <div class="mt"><span class="emoji">📋</span><span><b>실습 가이드</b> : 단계별 프롬프트를 복사해 직접 만듭니다<small>soominkim.github.io/claude-code-desktop</small></span></div>
+    </div>
   </div></section>
 <section class="slide s-hook">
   <div class="ring"></div><div class="orb"></div>
@@ -634,6 +752,76 @@ h2.big em{font-style:normal;color:var(--ink)}
       <div class="floop"><b>STEP 11+</b> 수정할 때마다 <span class="lp">수정 → 로컬 확인 → commit + push → Vercel 자동 재배포</span><span class="sp">이 루프만 반복하면 서비스는 계속 자랍니다</span></div>
     </div>
   </div><div class="src">단계별 프롬프트는 가이드에서 복사 : https://soominkim.github.io/claude-code-desktop</div></section>
+<section class="slide "><div class="toc reveal">IT 프로덕트의 핵심 구성</div>
+  <div class="content">
+    <h2 class="big reveal">IT 프로덕트의 핵심 구성, <em>프런트와 백엔드</em></h2>
+    <div class="lede reveal">모든 웹서비스는 <b>눈에 보이는 부분</b>과 <b>눈에 보이지 않는 부분</b>으로 나뉩니다.</div>
+    <div class="fb reveal">
+      <div class="fbc fe">
+        <span class="tag">CLIENT SIDE</span>
+        <h3>프런트엔드<small>클라이언트</small></h3>
+        <p>사용자의 <b>눈에 보이는 화면</b>에서 작동하는 부분입니다.</p>
+        <ul>
+          <li>웹사이트에 접속했을 때 보이는 <b>디자인, 버튼, 텍스트, 입력 박스</b></li>
+          <li>예 : 네이버 로그인을 눌렀을 때 <b>눈에 보이는 모든 요소</b></li>
+        </ul>
+      </div>
+      <div class="fbmid"><span>↔</span></div>
+      <div class="fbc be">
+        <span class="tag">SERVER SIDE</span>
+        <h3>백엔드<small>서버</small></h3>
+        <p>눈에 보이지 않지만 프로덕트의 <b>핵심 로직과 데이터 처리</b>를 담당합니다.</p>
+        <ul>
+          <li><b>로직</b> : 프로그램이 어떻게 동작하는지 정하는 논리적인 규칙</li>
+          <li>예 : <b>회원 정보 관리, 결제 처리, 데이터 저장</b></li>
+          <li>민감한 정보가 숨겨져 있어 <b>보안이 중요</b>합니다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bigline reveal" style="margin-top:50px">프런트는 <b>보여주고 입력받고</b>, 백엔드는 <b>판단하고 저장합니다.</b> 오늘 만드는 서비스도 이 두 부분으로 되어 있습니다.</div>
+  </div></section>
+<section class="slide "><div class="toc reveal">IT 프로덕트의 핵심 구성 · 예시</div>
+  <div class="content">
+    <h2 class="big reveal">로그인 버튼을 누르면 <em>무슨 일이 생길까</em></h2>
+    <div class="lede reveal">네이버 로그인을 예로 들면, 화면(프런트)과 서버(백엔드)가 요청과 응답을 한 번 주고받습니다.</div>
+    <div class="lgflow reveal">
+      <div class="node fe">
+        <div class="nt">FRONTEND · 화면</div>
+        <div class="mock">
+          <div class="mh">로그인</div>
+          <div class="in">아이디</div>
+          <div class="in">비밀번호</div>
+          <div class="bt">로그인</div>
+          <div class="res"><span class="ok">로그인 성공 화면</span><span class="no">비밀번호가 틀렸습니다</span></div>
+        </div>
+        <p>사용자가 직접 보고 조작하는 화면. 응답을 받아 결과를 보여줍니다.</p>
+      </div>
+      <div class="lane">
+        <div class="arw"><div class="lb"><span class="no">1</span>로그인 요청<small>아이디 + 비밀번호 전송</small></div><div class="ln"></div></div>
+        <div class="arw back"><div class="ln"></div><div class="lb"><span class="no">3</span>응답<small>로그인 성공 / 실패</small></div></div>
+      </div>
+      <div class="node be">
+        <div class="nt">BACKEND · 서버</div>
+        <h3>회원 정보와<br>일치하는지 확인</h3>
+        <p>전송받은 아이디와 비밀번호가 실제 회원 정보와 맞는지 판단합니다.</p>
+        <p>일치하면 <b style="color:#fff">"로그인 성공"</b>, 아니면 <b style="color:#fff">"비밀번호가 틀렸습니다"</b>를 돌려보냅니다.</p>
+      </div>
+      <div class="lane sm">
+        <div class="arw both"><div class="lb"><span class="no">2</span>조회<small>회원 목록 확인</small></div><div class="ln"></div></div>
+      </div>
+      <div class="node db">
+        <div class="nt">DATABASE</div>
+        <h3>데이터베이스</h3>
+        <p>회원 정보, 게시글, 상품 정보 등 모든 데이터를 저장하는 곳</p>
+        <div class="dbrows"><div>user01 · ••••</div><div class="hit">hong123 · ••••</div><div>user03 · ••••</div></div>
+      </div>
+    </div>
+    <div class="lgcap reveal">
+      <div><span class="n">1</span><b>프런트 → 백엔드</b> : 입력한 아이디와 비밀번호를 서버로 보냅니다</div>
+      <div><span class="n">2</span><b>백엔드 ↔ DB</b> : 저장된 회원 목록을 조회해 일치 여부를 판단합니다</div>
+      <div><span class="n">3</span><b>백엔드 → 프런트</b> : 결과를 보내면 화면이 성공 또는 오류 메시지를 보여줍니다</div>
+    </div>
+  </div></section>
 <section class="slide s-divider">
   <div class="ring"></div><div class="orb"></div>
   <div class="dwrap">
@@ -724,6 +912,29 @@ h2.big em{font-style:normal;color:var(--ink)}
       <div class="lstep"><div class="num">3</div><div class="tx">로그인이 되는가, 로그아웃하면 /admin이 막히는가</div></div>
       <div class="lstep hot"><div class="num">4</div><div class="tx">데이터가 Supabase에 실제로 생기는가<small>글을 쓴 뒤 Supabase 대시보드 → Table Editor에서 확인. 여기서 "진짜"임을 눈으로 봅니다</small></div></div>
       <div class="lstep"><div class="num">5</div><div class="tx">안 되는 게 있으면 그대로 말합니다<small>"댓글이 저장이 안 돼. 고쳐줘" : 원인 분석은 Claude Code의 일</small></div></div>
+    </div>
+  </div></section>
+<section class="slide "><div class="toc reveal">단계별 역할 · STEP 5~7 · 개념</div>
+  <div class="content">
+    <h2 class="big reveal">버전 관리 시스템 Git과 <em>코드 저장소 GitHub</em></h2>
+    <div class="lede reveal">코드는 계속 바뀝니다. 바뀐 기록을 남기는 도구와, 그 기록을 보관하는 장소가 필요합니다.</div>
+    <div class="vc reveal">
+      <div class="vt">
+        <div class="blist" style="margin-top:6px;gap:26px">
+          <div class="bli"><b>왜 버전 관리가 필요할까</b><small>개발 중에는 코드 수정이 빈번합니다. 어떤 부분이 바뀌었는지, 이전 버전으로 어떻게 되돌릴지를 체계적으로 관리해야 합니다.</small></div>
+          <div class="bli"><b>Git</b> : 가장 널리 쓰이는 버전 관리 시스템<small>내 컴퓨터에서 코드의 변경 이력을 기록합니다.</small></div>
+          <div class="bli"><b>GitHub</b> : Git으로 관리한 코드를 저장하고 공유하는 클라우드 저장소<small>코드를 보관하고, 다른 개발자와 협업하고, 오픈소스 프로젝트에 참여하는 플랫폼입니다.</small></div>
+        </div>
+      </div>
+      <div class="vd">
+        <div class="vbox local"><div class="ltile"><svg class="lg" style="width:42px;height:42px;color:#F03C2E"><use href="#i-git"/></svg></div><div><h3><small>MY COMPUTER · GIT</small>내 컴퓨터</h3><p>Git으로 코드와 변경 이력을 관리</p></div></div>
+        <div class="vmid">
+          <div class="varrow"><div class="shaft"></div><div class="vl">push<small>GitHub에 올려 저장</small></div></div>
+          <div class="varrow up"><div class="shaft"></div><div class="vl">pull<small>GitHub에서 불러오기</small></div></div>
+        </div>
+        <div class="vbox remote"><div class="ltile"><svg class="lg" style="width:42px;height:42px;color:#181717"><use href="#i-github"/></svg></div><div><h3><small>CLOUD · GITHUB</small>저장소 (Repository)</h3><p>코드를 보관하는 클라우드 저장 공간</p></div></div>
+        <div class="vnote"><span style="font-size:30px">☁️</span><span>저장소는 <b>구글 드라이브나 아이클라우드처럼</b> 코드를 클라우드에 저장하는 공간이라고 생각하면 됩니다.</span></div>
+      </div>
     </div>
   </div></section>
 <section class="slide "><div class="toc reveal">단계별 역할 · STEP 5~7</div>
